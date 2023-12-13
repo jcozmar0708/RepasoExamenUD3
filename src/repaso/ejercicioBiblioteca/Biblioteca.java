@@ -12,10 +12,8 @@ public class Biblioteca {
         libros = new ArrayList<Libro>();
     }
 
-    public void listarLibros(){
-        for (Libro l : libros) {
-            System.out.println(l);
-        }
+    public List<Libro> getLibros() {
+        return List.copyOf(libros);
     }
 
     public void aniadirLibro(Libro libro){

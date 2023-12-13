@@ -41,13 +41,17 @@ public class MainBiblioteca {
                     case 6:
                         eliminarLibro(biblioteca);
                         break;
+                    case 7:
+                        break;
+                    default:
+                        System.out.println("El número introducido no es válido");
                 }
             }
         } while (eleccion != 7);
     }
 
     private static void listarLibros(Biblioteca biblioteca){
-        biblioteca.listarLibros();
+        System.out.println(biblioteca.getLibros());
     }
 
     private static void buscarLibros(Biblioteca biblioteca){
